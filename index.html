@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+            color: #fff;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 300;
+            letter-spacing: 10px;
+            margin-bottom: 30px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        .divider {
+            width: 200px;
+            height: 2px;
+            background: #fff;
+            margin: 0 auto 30px;
+            animation: expand 1.5s ease-out;
+        }
+
+        p {
+            font-size: 1.2rem;
+            letter-spacing: 3px;
+            opacity: 0.8;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+            }
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+            }
+        }
+
+        @keyframes expand {
+            from {
+                width: 0;
+            }
+            to {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WELCOME</h1>
+        <div class="divider"></div>
+        <p>简约 · 优雅 · 现代</p>
+    </div>
+</body>
+</html>
